@@ -22,7 +22,8 @@ basic:
 zsh:
   echo "Installing Oh My Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  chsh -s $(which zsh)
+  # chsh -s $(which zsh)
+  echo "If you want to change your default shell to zsh, run: chsh -s $(which zsh)"
 
   echo "Installing Plugins for zsh"
   export ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
