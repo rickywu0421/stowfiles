@@ -19,7 +19,7 @@ basic:
 
   echo "Basic installation done"
 
-zsh: basic
+zsh:
   echo "Installing Oh My Zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   chsh -s $(which zsh)
@@ -32,7 +32,7 @@ zsh: basic
   git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
   git clone https://github.com/fdellwing/zsh-bat.git $ZSH_CUSTOM/plugins/zsh-bat
 
-stow: basic
+stow:
   echo "Installing stow files..."
   stow zsh git nvim
 
