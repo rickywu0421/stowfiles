@@ -21,7 +21,7 @@ basic:
 
 zsh:
   echo "Installing Oh My Zsh..."
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
   # chsh -s $(which zsh)
   echo "If you want to change your default shell to zsh, run: chsh -s $(which zsh)"
 
