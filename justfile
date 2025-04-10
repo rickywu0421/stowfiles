@@ -34,5 +34,6 @@ zsh:
 
 stow:
   echo "Installing stow files..."
+  mv ~/.zshrc ~/.zshrc.orig
   stow zsh git nvim
 
