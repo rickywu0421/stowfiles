@@ -9,9 +9,10 @@ basic:
   ## Installation
   sudo apt update
   sudo apt install -y \
-    neovim git curl wget unzip \
+    git curl wget unzip \
     ripgrep fd-find fzf zoxide bat \
     stow zsh
+  sudo snap install nvim --classic
 
   ## Creating soft links
   sudo ln -sf $(which fdfind) /usr/bin/fd
