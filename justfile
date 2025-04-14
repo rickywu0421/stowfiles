@@ -11,7 +11,7 @@ basic:
   sudo apt install -y \
     git curl wget unzip \
     ripgrep fd-find fzf zoxide bat \
-    stow zsh tldr
+    stow zsh tldr moreutils
   sudo snap install nvim --classic
 
   ## Creating soft links
