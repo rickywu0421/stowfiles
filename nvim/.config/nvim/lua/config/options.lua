@@ -3,3 +3,5 @@
 -- Add any additional options here
 vim.opt.relativenumber = false
 vim.g.autoformat = false
+vim.opt.listchars = { eol = '↵', trail = '~', tab = '>-', nbsp = '␣' }
+vim.opt.list = false
