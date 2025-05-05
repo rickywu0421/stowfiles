@@ -180,5 +180,13 @@ return {
 
   {
     "tpope/vim-fugitive",
-  }
+  },
+
+  {
+    "stevearc/aerial.nvim",
+    opts = {
+      open_automatic = true,
+    },
+  },
 }
+
