@@ -72,7 +72,9 @@ return {
       servers = {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
-        clangd = {},
+        clangd = {
+          cmd = { "clangd", "--header-insertion=never" },
+        },
         bashls = {},
       },
     },
