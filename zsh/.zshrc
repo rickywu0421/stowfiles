@@ -165,22 +165,4 @@ alias rvim="nvim -R"
 # these files are not unnecessarily reordered.
 export LC_ALL=C.UTF-8
 
-# Helper to call debian/rules quickly
-alias fdr="fakeroot debian/rules"
-
-# Set shell variables so various Debian maintenance tools know your real name
-# and email address to use for packages
-export DEBEMAIL="en-wei.wu@canonical.com"
-export DEBFULLNAME="En-Wei Wu"
-
-# Set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
-fi
-
-# Add cranky tools to the PATH and enable bash auto-completion
-# export PATH=$HOME/canonical/kteam-tools/cranky:$PATH
-# export PATH=$HOME/canonical/kteam-tools/maintscripts:$PATH
-# source $HOME/canonical/kteam-tools/cranky/cranky-complete.bash
-
 eval "$(zoxide init zsh)"
